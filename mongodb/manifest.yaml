@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: mongodb
   namespace: roboshop
   # these are replica set labels
   labels:
