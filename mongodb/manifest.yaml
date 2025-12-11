@@ -27,4 +27,4 @@ spec:
     spec:
       containers:   
       - name: mongodb
-        image: dawsjakkam/mongodb:v1
+        image: dawsjakkam/mongodb
