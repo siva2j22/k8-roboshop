@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: mongodb
   namespace: roboshop
-  # these are replica set labels
   labels:
     project: roboshop
     component: mongodb
@@ -11,20 +10,17 @@ metadata:
 spec:
   replicas: 1
   selector:
-    # these labels are used to select pods
     matchLabels:
-    project: roboshop
-    component: mongodb
-    tier: db
-  # pod definition
+      project: roboshop
+      component: mongodb
+      tier: db
   template:
     metadata:
       labels:
-        # purpose: dp-demo
         project: roboshop
         component: mongodb
         tier: db
     spec:
-      containers:   
-      - name: mongodb
-        image: dawsjakkam/mongodb:v1
+      containers:
+        - name: mongodb
+          image: dawsjakkam/mongodb:v1
