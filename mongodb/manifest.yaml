@@ -27,4 +27,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: dawsjakkam/mongodb
+        image: dawsjakkam/mongodb:v1
