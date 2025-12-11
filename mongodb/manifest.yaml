@@ -25,6 +25,6 @@ spec:
         component: mongodb
         tier: db
     spec:
-      containers:
-      - name: nginx
+      containers:   
+      - name: mongodb
         image: dawsjakkam/mongodb:v1
