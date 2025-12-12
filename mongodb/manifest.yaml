@@ -41,7 +41,7 @@ metadata:
   name: mongodb
   namespace: roboshop
 spec:
-  selectors:
+  selector:
     project: roboshop
     component: mongodb
     tier: db
