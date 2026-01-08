@@ -1,3 +1,13 @@
+apiVersion : v1
+kind: ConfigMap
+metadata:
+  name: catalogue
+  namespace: roboshop
+data:
+  MONGO: "true""
+  MONGO_URL: "mongodb://mongodb:27017/catalogue"
+  
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -25,6 +35,9 @@ spec:
         - name: catalogue
           image: dawsjakkam/catalogue:v1
           imagePullPolicy: Always
+          envFrom:
+          - configMapRef:
+              name: catalogue
           ports:
           - name: liveness-port
             containerPort: 8080
