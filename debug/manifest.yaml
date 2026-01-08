@@ -10,4 +10,5 @@ spec:
   containers:
   - name: debug
     image: dawsjakkam/debug:v1
+    imagePullPolicy: Always
     
