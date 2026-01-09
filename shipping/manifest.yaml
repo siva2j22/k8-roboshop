@@ -12,7 +12,7 @@ kind: Deployment
 metadata:
   name: shipping
   namespace: roboshop
-  # these are replica set labels
+  # these are replica set labels are added
   labels:
     project: roboshop
     component: shipping
