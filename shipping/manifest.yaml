@@ -20,7 +20,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    # these labels are used to select pods
+    # these labels are used to select pods are
     matchLabels:
       project: roboshop
       component: shipping
